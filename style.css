@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .parents {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+   
+  }
+
+.header-wrapper{
+  height: 90vh;
+  width: 100%;
+  background: url(imagens/familia.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  filter: blur(3px);
+  z-index: -1;
+ 
+}
+
+.text-header{
+  color: rgb(252, 252, 252);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 800px;
+  font-size: 40px;
+  text-shadow: rgb(199, 90, 0) 2px 2px;
+  font-family: Candara;
+}
+
+.container-button{
+  position: relative;
+  padding: 10%;
+  margin-left: 30%;
+  width: 300px;
+  height: 300px;
+}
+
+.btn-doar{
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.5s;
+}
+
+.btn-doar:hover{
+  background-color: #ffffff;
+  color: #f4511e;
+  transition: all 2s ;
+  
+}
+
+/* MENU HAMBURGUER */
+  .header{
+    background-color: #ff5500;
+    
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .container{
+    max-width: 1224px;
+    width: 90%;
+    margin: 0 auto; 
+  }
+
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .nav-branding{
+    font-size: 1.3rem;
+  }
+  .nav-name{
+    font-size: 2.5rem;
+    margin-left: 150px;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  .nav-link:hover{
+    color: rgb(77, 13, 150);
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color:#ffffff;
+  }
+
+/* Container main */
+.contateiners {
+  background-color: #ff5500;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.card-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
+  
+}
+.cover-text{
+  background-color: rgb(77, 13, 150);
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+ 
+}
+
+.wrapper-text{
+  background-color: rgb(255, 255, 255);
+  color: #ff5500;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+ 
+
+.wrapper1{
+  height: 400px;
+  width: 300px;
+  background-image: url('imagens/donation.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper2{
+  height: 400px;
+  width: 300px;
+  background-image: url('imagens/agreement.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper3{
+  height: 400px;
+  width: 300px;
+  background-image: url('imagens/charity.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper4{
+  height: 400px;
+  width: 300px;
+  background-image: url('imagens/teamwork.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container{
+  width: 100%;
+  height: 100px;
+  background-color: #ff5500;
+}
+
+  @media(max-width:900px){
+    .hamburger{
+      display: block;
+      
+    }
+   .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+   .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+   .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+   .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #ff5500;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      z-index: 9999;
+    }
+   .nav-item{
+      margin: 16px 0;
+    }
+   .nav-menu.active{
+      left: 0;
+    }
+    .nav-name{
+        font-size: 2.5rem;
+        margin-left: -15px;
+      }
+  }
+
+  
+
+ 
+
